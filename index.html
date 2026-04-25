@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>순대파파 - IT 기획 전문가</title>
+
+    <meta http-equiv="Content-Security-Policy"
+          content="default-src 'self';
+                   script-src 'self' https://cdn.tailwindcss.com;
+                   style-src 'self' 'unsafe-inline' https://cdn.tailwindcss.com;
+                   img-src 'self' data: https:;
+                   font-src 'self';
+                   connect-src 'self';
+                   frame-ancestors 'none';
+                   base-uri 'self';
+                   form-action 'self';">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=(), camera=()">
+
+    <script src="https://cdn.tailwindcss.com" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-slate-50 text-slate-800 scroll-smooth">
+
+    <!-- Hero Section -->
+    <section id="hero" class="min-h-screen flex items-center justify-center relative overflow-hidden bg-slate-950 px-4">
+        <!-- Gradient orbs -->
+        <div class="absolute top-1/4 -left-32 w-[500px] h-[500px] bg-indigo-700/20 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute bottom-1/4 -right-32 w-[500px] h-[500px] bg-purple-700/20 rounded-full blur-3xl pointer-events-none"></div>
+        <!-- Grid overlay -->
+        <div class="absolute inset-0 hero-grid pointer-events-none"></div>
+
+        <div class="relative text-center max-w-4xl mx-auto">
+            <div class="animate-fade-in mb-6">
+                <span class="inline-block px-4 py-1.5 rounded-full text-indigo-300 border border-indigo-500/30 bg-indigo-500/10 text-xs font-semibold tracking-widest uppercase">
+                    IT 기획 전문가
+                </span>
+            </div>
+
+            <div class="animate-fade-in" style="animation-delay: 0.1s;">
+                <h1 class="text-7xl md:text-9xl font-black mb-6 gradient-text leading-none tracking-tight">
+                    순대파파
+                </h1>
+            </div>
+
+            <div class="mb-8 h-14 md:h-16 flex items-center justify-center">
+                <h2 class="text-xl md:text-3xl font-medium text-slate-400" id="typing-text"></h2>
+            </div>
+
+            <p class="text-sm md:text-base text-slate-500 mb-14 max-w-md mx-auto leading-relaxed">
+                IT 인프라 전문 경험과 전략적 기획 능력으로<br>
+                조직의 IT 경쟁력 강화에 기여하고 있습니다
+            </p>
+
+            <div class="animate-bounce">
+                <svg class="w-5 h-5 mx-auto text-slate-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 md:py-36 px-4 bg-white">
+        <div class="max-w-4xl mx-auto">
+            <div class="mb-16 text-center section-title">
+                <p class="text-indigo-500 font-semibold text-xs tracking-widest uppercase mb-3">About</p>
+                <h2 class="text-4xl md:text-5xl font-bold text-slate-900">소개</h2>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-6">
+                <!-- Career Card -->
+                <div class="card-fade-in p-8 rounded-2xl border border-slate-100 bg-white shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                    <div class="w-10 h-10 rounded-xl bg-indigo-50 flex items-center justify-center mb-5">
+                        <svg class="w-5 h-5 text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-3">경력</h3>
+                    <p class="text-slate-500 leading-relaxed text-sm">
+                        XX기업에서 <strong class="text-indigo-600 font-semibold">ITO (IT Outsourcing)</strong> 업무를 수행한 경험을 바탕으로,
+                        현재는 <strong class="text-indigo-600 font-semibold">IT전략부서</strong>에서 근무하고 있습니다.
+                    </p>
+                </div>
+
+                <!-- Expertise Card -->
+                <div class="card-fade-in p-8 rounded-2xl border border-slate-100 bg-white shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300" style="animation-delay: 0.1s;">
+                    <div class="w-10 h-10 rounded-xl bg-violet-50 flex items-center justify-center mb-5">
+                        <svg class="w-5 h-5 text-violet-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-3">핵심 역량</h3>
+                    <ul class="text-slate-500 space-y-2 text-sm">
+                        <li class="flex items-center gap-2.5"><span class="w-1.5 h-1.5 rounded-full bg-indigo-400 shrink-0"></span>Unix/Linux 시스템 관리</li>
+                        <li class="flex items-center gap-2.5"><span class="w-1.5 h-1.5 rounded-full bg-indigo-400 shrink-0"></span>Oracle 데이터베이스 운영</li>
+                        <li class="flex items-center gap-2.5"><span class="w-1.5 h-1.5 rounded-full bg-indigo-400 shrink-0"></span>클라우드 기술 및 전략</li>
+                        <li class="flex items-center gap-2.5"><span class="w-1.5 h-1.5 rounded-full bg-indigo-400 shrink-0"></span>IT 비용 관리 및 코스팅</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-24 md:py-36 px-4 bg-slate-50">
+        <div class="max-w-4xl mx-auto">
+            <div class="mb-16 text-center section-title">
+                <p class="text-indigo-500 font-semibold text-xs tracking-widest uppercase mb-3">Skills</p>
+                <h2 class="text-4xl md:text-5xl font-bold text-slate-900">기술 스택</h2>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-5">
+                <div class="skill-badge">Unix Admin</div>
+                <div class="skill-badge">Oracle DB</div>
+                <div class="skill-badge">Cloud</div>
+                <div class="skill-badge">경영지원</div>
+                <div class="skill-badge">Costing</div>
+                <div class="skill-badge">IT 기획</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Competencies Section -->
+    <section id="competencies" class="py-24 md:py-36 px-4 bg-white">
+        <div class="max-w-4xl mx-auto">
+            <div class="mb-16 text-center section-title">
+                <p class="text-indigo-500 font-semibold text-xs tracking-widest uppercase mb-3">Competencies</p>
+                <h2 class="text-4xl md:text-5xl font-bold text-slate-900">핵심 역량</h2>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-5">
+                <div class="competency-item group p-7 rounded-2xl border border-slate-100 hover:border-indigo-200 hover:bg-indigo-50/60 transition-all duration-300 cursor-default">
+                    <div class="text-5xl font-black text-slate-100 group-hover:text-indigo-100 transition-colors mb-4 select-none leading-none">01</div>
+                    <h3 class="text-base font-bold text-slate-900 mb-2">IT 인프라 관리</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed">Unix/Linux 시스템 관리 및 Oracle 데이터베이스 운영을 통한 안정적인 인프라 유지보수</p>
+                </div>
+
+                <div class="competency-item group p-7 rounded-2xl border border-slate-100 hover:border-indigo-200 hover:bg-indigo-50/60 transition-all duration-300 cursor-default" style="animation-delay: 0.08s;">
+                    <div class="text-5xl font-black text-slate-100 group-hover:text-indigo-100 transition-colors mb-4 select-none leading-none">02</div>
+                    <h3 class="text-base font-bold text-slate-900 mb-2">클라우드 전략</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed">클라우드 기반 시스템 아키텍처 설계 및 디지털 전환 기획</p>
+                </div>
+
+                <div class="competency-item group p-7 rounded-2xl border border-slate-100 hover:border-indigo-200 hover:bg-indigo-50/60 transition-all duration-300 cursor-default" style="animation-delay: 0.16s;">
+                    <div class="text-5xl font-black text-slate-100 group-hover:text-indigo-100 transition-colors mb-4 select-none leading-none">03</div>
+                    <h3 class="text-base font-bold text-slate-900 mb-2">IT 비용 관리</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed">경영지원부문 코스팅 전문 지식으로 IT 투자 의사결정 및 재무 계획 수립</p>
+                </div>
+
+                <div class="competency-item group p-7 rounded-2xl border border-slate-100 hover:border-indigo-200 hover:bg-indigo-50/60 transition-all duration-300 cursor-default" style="animation-delay: 0.24s;">
+                    <div class="text-5xl font-black text-slate-100 group-hover:text-indigo-100 transition-colors mb-4 select-none leading-none">04</div>
+                    <h3 class="text-base font-bold text-slate-900 mb-2">전략 기획</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed">IT 전략 수립 및 비즈니스 최적화를 통한 조직의 IT 경쟁력 강화</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 py-10 px-4 text-center border-t border-white/5">
+        <p class="text-slate-500 text-sm mb-1">IT 기획 · 인프라 관리 · 클라우드 전략 · 비용 관리</p>
+        <p class="text-slate-700 text-xs">© <span id="year">2026</span> 순대파파 All rights reserved</p>
+    </footer>
+
+    <script src="main.js" defer></script>
+</body>
+</html>
