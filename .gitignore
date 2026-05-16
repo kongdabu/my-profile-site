@@ -1,0 +1,13 @@
+# 환경변수 및 민감 파일
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+
+# 시스템
+.DS_Store
+
+# 의존성 및 빌드
+node_modules/
+dist/
